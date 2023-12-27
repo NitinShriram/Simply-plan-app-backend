@@ -20,4 +20,9 @@ mongoose
 
  app.use("/api",routes)
 
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
+
 app.listen(PORT, () => console.log("listening at "+PORT+"..."))
