@@ -18,7 +18,7 @@ mongoose
  .then(() => console.log("MongoDB connected..."))
  .catch((err) => console.log(err))
 
- app.use("/api",routes)
+ app.use(routes)
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
